@@ -9,15 +9,23 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="./assets/images/favicon-32x32.png"
     />
 
     <title>Frontend Mentor | Sunnyside agency landing page</title>
+    <!-- Font family setup -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
     <link
       rel="stylesheet"
       href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="./assets/csss/style.css" />
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution {
@@ -31,66 +39,149 @@
   </head>
   <body>
     <main>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <!-- Navigation menu -->
+      <nav class="navbar px-5 py-4 navbar-expand-lg navbar-light nav-bg">
         <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><span class="nav-logo white-text">sunnyside</span></a
+          >
           <button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarTogglerDemo03"
-            aria-controls="navbarTogglerDemo03"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <a class="navbar-brand" href="#">sunnyside</a>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
+              <li class="nav-item me-4">
+                <a class="nav-link white-text" aria-current="page" href="#"
                   >About</a
                 >
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
+              <li class="nav-item me-4">
+                <a class="nav-link white-text" href="#">Services</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Projects</a>
+              <li class="nav-item me-4">
+                <a class="nav-link white-text" href="#">Projects</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact Me</a>
+              <li class="nav-item me-4">
+                <div class="white">
+                  <a
+                    class="nav-link white-text btn btn-light text-black rounded-pill px-4 py-2 text-uppercase nav-btn font-fraunces"
+                    href="#"
+                    >Contact</a
+                  >
+                </div>
+                <div class="yellow">
+                  <a
+                    class="nav-link white-text btn btn-warning text-black rounded-pill px-4 py-2 text-uppercase nav-btn font-fraunces"
+                    href="#"
+                    >Contact</a
+                  >
+                </div>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-    </main>
-    <section class="main-bg py-5">We are creatives</section>
-    Transform your brand We are a full-service creative agency specializing in
-    helping brands grow fast. Engage your clients through compelling visuals
-    that do most of the marketing for you. Learn more Stand out to the right
-    audience Using a collaborative formula of designers, researchers,
-    photographers, videographers, and copywriters, we’ll build and extend your
-    brand in digital places. Learn more Graphic design Great design makes you
-    memorable. We deliver artwork that underscores your brand message and
-    captures potential clients’ attention. Photography Increase your credibility
-    by getting the most stunning, high-quality photos that improve your business
-    image. Client testimonials We put our trust in Sunnyside and they delivered,
-    making sure our needs were met and deadlines were always hit. Emily R.
-    Marketing Director Sunnyside’s enthusiasm coupled with their keen interest
-    in our brand’s success made it a satisfying and enjoyable experience. Thomas
-    S. Chief Operating Officer Incredible end result! Our sales increased over
-    400% when we worked with Sunnyside. Highly recommended! Jennie F. Business
-    Owner About Services Projects Contact
+      <section
+        class="main-bg d-flex text-center justify-content-start align-items-center gy-5 flex-column"
+      >
+        <div class="col-xl-6 main-text mb-xl-5">We are creatives</div>
+        <div class="col-xl-6 mt-xl-2">
+          <img src="./assets/images/icon-arrow-down.svg" alt="" />
+        </div>
+      </section>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-      <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-      <script src="./assets/js/app.js"></script>
-    </div>
+      <div class="">
+        <!-- Transform section -->
+        <div
+          class="d-flex justify-content-center align-items-center flex-xl-row flex-column-reverse"
+        >
+          <div class="col-xl-6 px-xl-5">
+            <div class="px-5 py-5 text-lg-start text-center">
+              <h1 class="font-fraunces py-3">Transform your brand</h1>
+              <p class="font-barlow color-dark-grayish-blue lh-lg fs-5 pe-xl-5">
+                We are a full-service creative agency specializing in helping
+                brands grow fast. Engage your clients through compelling visuals
+                that do most of the marketing for you.
+              </p>
+              <a
+                class="learn-more transform text-uppercase text-decoration-none text-black font-fraunces"
+                href=""
+                >Learn more</a
+              >
+            </div>
+          </div>
+          <div class="col-xl-6 col-xl-2">
+            <div class="w-100">
+              <img
+                src="./assets/images/desktop/image-transform.jpg"
+                class="w-100"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <!-- Stand out section -->
+        <div
+          class="d-flex justify-content-center align-items-center flex-lg-row flex-column"
+        >
+          <div class="col-xl-6 col-xl-2">
+            <div class="w-100">
+              <img
+                src="./assets/images/desktop/image-stand-out.jpg"
+                class="w-100"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="col-xl-6 px-xl-5">
+            <div class="px-5 py-5 text-lg-start text-center">
+              <h1 class="font-fraunces py-3">
+                Stand out to the right audience
+              </h1>
+              <p class="font-barlow color-dark-grayish-blue lh-lg fs-5 pe-xl-5">
+                Using a collaborative formula of designers, researchers,
+                photographers, videographers, and copywriters, we’ll build and
+                extend your brand in digital places.
+              </p>
+              <a
+                class="learn-more stand-out text-uppercase text-decoration-none text-black font-fraunces"
+                href=""
+                >Learn more</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <p>
+        Learn more Graphic design Great design makes you memorable. We deliver
+        artwork that underscores your brand message and captures potential
+        clients’ attention. Photography Increase your credibility by getting the
+        most stunning, high-quality photos that improve your business image.
+        Client testimonials We put our trust in Sunnyside and they delivered,
+        making sure our needs were met and deadlines were always hit. Emily R.
+        Marketing Director Sunnyside’s enthusiasm coupled with their keen
+        interest in our brand’s success made it a satisfying and enjoyable
+        experience. Thomas S. Chief Operating Officer Incredible end result! Our
+        sales increased over 400% when we worked with Sunnyside. Highly
+        recommended! Jennie F. Business Owner About Services Projects Contact
+      </p>
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+        <script src="./assets/js/app.js"></script>
+      </div>
+    </main>
   </body>
 </html>

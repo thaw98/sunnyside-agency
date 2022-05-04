@@ -89,6 +89,7 @@ footer {
   color: var(--white) !important;
   border: none;
 }
+
 /* Section 2 */
 .learn-more {
   position: relative;
@@ -161,8 +162,36 @@ footer {
   .main-text {
     font-size: 2.5em;
   }
-}
-.nav-btn {
-  background-color: var(--yellow) !important;
-  border: none !important;
+  .nav-btn {
+    background-color: var(--yellow) !important;
+    border: none !important;
+  }
+  .nav-btn:hover {
+    background-color: var(--yellow) !important;
+    color: var(--very-dark-desaturated-blue) !important;
+  }
+  /* Mobile nav */
+  .mobile-nav {
+    background: var(--white);
+    padding: 40px;
+    position: relative;
+    top: 30px;
+    right: 20px;
+    width: 90%;
+  }
+  .mobile-nav::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: -28px;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-bottom: 30px solid var(--white);
+  }
+  .mobile-nav li a {
+    text-align: center;
+    color: var(--very-dark-desaturated-blue) !important;
+  }
 }

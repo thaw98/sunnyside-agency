@@ -61,9 +61,6 @@ body {
 footer {
   background-color: #91d4c6;
 }
-.svg-footer {
-  color: var(--dark-moderate-cyan);
-}
 /* Section 1 styling */
 .main-bg {
   background: url("../images/desktop/image-header.jpg");
@@ -145,6 +142,19 @@ footer {
 }
 .photography-text {
   color: var(--dark-blue);
+}
+/* Footer */
+.footer-a a {
+  color: var(--dark-moderate-cyan);
+  transition: 0.5s;
+}
+.footer-a a:hover {
+  color: var(--white) !important;
+}
+
+.icon a img:hover {
+  filter: brightness(0) invert(100%);
+  transition: 0.5s;
 }
 /* Media query... less than 375px? just use this! */
 @media screen and (max-width: 376px) {
